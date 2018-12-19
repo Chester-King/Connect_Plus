@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs");
 app.use(methodOverride("_method"));
 
-//seedDB(); //seed the database
-//var seedDB=require("./seeds");
+// var seedDB=require("./seeds");
+// seedDB; //seed the database
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
