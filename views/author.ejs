@@ -19,7 +19,7 @@
 }
 
 
-	
+
     .navbar-inverse .navbar-nav>li>a{
 	color: white;
 }
@@ -38,15 +38,15 @@ html{
 h1{
 	font-weight: 700;
 	font-size: 5em;
-	
-	
+
+
 }
 h3{
 	color: #222;
 }
 
 p{
-   
+
    font-size:1em;
    color:rgb(139, 133, 133);
 
@@ -54,7 +54,7 @@ p{
 
 #main {
   width: 600px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 #content{
@@ -98,20 +98,20 @@ hr{
 }
 
 @keyframes typing {
-    from { 
-        width: 0% 
+    from {
+        width: 0%
     }
-    to { 
-        width: 100% 
+    to {
+        width: 100%
     }
 }
 
 @keyframes blink {
-    from, to { 
-        border-color: transparent 
+    from, to {
+        border-color: transparent
     }
-    50% { 
-        border-color: orange; 
+    50% {
+        border-color: orange;
     }
 }
 td{
@@ -130,7 +130,7 @@ td{
   color: #000;
   text-decoration: none;
   margin-right: 5px;
-    
+
 
 }
 .liked {
@@ -182,13 +182,13 @@ td{
       font-style: normal;
   }
   .panel {
-      border: 1px solid #f4511e; 
+      border: 1px solid #f4511e;
       height: 550px;
       width: 300px;
       border-radius:0 !important;
       transition: box-shadow 0.5s;
       padding: 50px 40px;
-      
+
   }
   .panel:hover {
       box-shadow: 5px 0px 40px #f4511e;
@@ -213,7 +213,7 @@ td{
       margin-bottom: 25px;
       width: 100%;
       height: 50%;
-   
+
   }
   .person:hover {
       border-color: #f1f1f1;
@@ -240,7 +240,7 @@ td{
     }
   }
   .asd{
-   
+
     background-color: #228cbd !important;
   }
 </style>
@@ -250,7 +250,7 @@ td{
 
     </head>
     <body>
-       
+
     <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
 			<div class="container">
 			<div class="navbar-header">
@@ -260,13 +260,13 @@ td{
 	        		<span class="icon-bar"></span>
 	        		<span class="icon-bar"></span>
 	      		</button>
-				<a href="/" class="navbar-brand active">Connect+</a>
+				<a href="/" class="navbar-brand active">Connect<sup>+</sup></a>
 			</div>
 			<div  class="nav navbar-nav">
 				<li><a href="/posts">Postfeed</a></li>
-				<li class="asd"><a href="/author">About</a></li>
+				<li class="asd"><a href="/author">Developer</a></li>
 			</div>
-			
+
     		<div class="collapse navbar-collapse" id="bs-nav-demo">
 			     <ul class="nav navbar-nav navbar-right">
                     <% if(!currentUser){ %>
@@ -286,7 +286,7 @@ td{
 			</div>
 			</div>
 		</nav>
-        
+
 
 
 
@@ -297,8 +297,8 @@ td{
 <!-- Container (Pricing Section) -->
 <div class="container-fluid" >
   <div class="row">
-         
-            
+
+
        <div class="col-sm-3 col-xs-12" >
             <div class="panel panel-default text-center" >
                   <h3>Madhur Dixit</h3>
@@ -310,19 +310,21 @@ td{
                         <p><span class="glyphicon glyphicon-phone"></span> +91 7905674248</p>
                         <p><span class="glyphicon glyphicon-envelope"></span> dmadhur6@gmail.com</p>
                         <a href="https://www.github.com/Chester-King"><i class="fa fa-github"></i> github.com/Chester-King</a>
-      
-      
+
+
                   </div>
-               
-                
-            
-            </div>      
-          </div>     
-    
-             
+
+
+
+            </div>
+          </div>
+
+
+
+
   </div>
 </div>
-<% include partials/footer %> 
+<% include partials/footer %>
 
 </body>
 </html>
