@@ -13,7 +13,7 @@ var commentRoutes=require("./routes/comments"),
     postRoutes=require("./routes/posts"),
     indexRoutes=require("./routes/index");
 
-mongoose.connect("mongodb://chesterking:qwe123rty@ds141783.mlab.com:41783/chesterking");
+mongoose.connect("mongodb://chesterking:qwe123rty@ds141783.mlab.com:41783/chesterking",{ useNewUrlParser: true });
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs");
 app.use(methodOverride("_method"));
@@ -25,7 +25,7 @@ app.use(methodOverride("_method"));
 app.use(require("express-session")({
     secret: "Peace in our time",
     resave: false,
-    saveUnintialize: false
+    saveUninitialized: false
 }));
 app.use(passport.initialize());
 app.use(passport.session());
